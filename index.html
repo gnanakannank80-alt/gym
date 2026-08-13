@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PULSE FIT Coimbatore - Premium Gym & Fitness Center in Tamil Nadu. Transform your body with world-class trainers, state-of-the-art equipment, and custom workout plans.">
-    <meta name="keywords" content="gym Coimbatore, Tamil Nadu fitness center, personal training, bodybuilding, crossfit, cardio, workout plans, health club Tamil Nadu">
-    <meta name="author" content="PULSE FIT Fitness Center, Tamil Nadu">
+    <meta name="description" content="AYAN FITNESS Tiruppur - Premium Gym & Fitness Center in Tamil Nadu. Transform your body with world-class trainers, state-of-the-art equipment, and custom workout plans.">
+    <meta name="keywords" content="gym Tiruppur, Tamil Nadu fitness center, personal training, bodybuilding, crossfit, cardio, workout plans, health club Tamil Nadu, weight loss service">
+    <meta name="author" content="AYAN FITNESS Weight Loss Service, Tamil Nadu">
     <meta name="theme-color" content="#0B0C10">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>PULSE FIT | Premium Gym & Fitness Center - Tamil Nadu</title>
+    <title>AYAN FITNESS | Weight Loss Service - Tiruppur, Tamil Nadu</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -202,51 +202,7 @@
         }
 
         /* ==========================================================================
-           3. PRELOADER
-           ========================================================================== */
-        #preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: var(--bg-primary);
-            z-index: 99999;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.5s ease, visibility 0.5s ease;
-        }
-
-        .loader-ring {
-            width: 70px;
-            height: 70px;
-            border: 4px solid var(--border-color);
-            border-top: 4px solid var(--accent-red);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin-bottom: 20px;
-        }
-
-        .loader-text {
-            font-family: var(--font-heading);
-            font-size: 1.8rem;
-            letter-spacing: 4px;
-            color: #fff;
-        }
-
-        .loader-text span {
-            color: var(--accent-red);
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* ==========================================================================
-           4. STICKY NAVBAR & MOBILE MENU
+           3. STICKY NAVBAR & MOBILE MENU
            ========================================================================== */
         .navbar {
             position: fixed;
@@ -416,7 +372,7 @@
         }
 
         /* ==========================================================================
-           5. HERO SECTION
+           4. HERO SECTION
            ========================================================================== */
         .hero {
             min-height: 100vh;
@@ -430,6 +386,7 @@
 
         .hero-content {
             max-width: 800px;
+            opacity: 1; /* Fallback */
         }
 
         .hero-tag {
@@ -481,7 +438,8 @@
         /* Quick Features Strip */
         .features-strip {
             background-color: var(--bg-secondary);
-            border-y: 1px solid var(--border-color);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
             padding: 35px 0;
             margin-top: -50px;
             position: relative;
@@ -527,7 +485,7 @@
         }
 
         /* ==========================================================================
-           6. ABOUT & WHY CHOOSE US
+           5. ABOUT & WHY CHOOSE US
            ========================================================================== */
         .about-grid {
             display: grid;
@@ -722,7 +680,7 @@
         }
 
         /* ==========================================================================
-           7. MEMBERSHIP PLANS & PRICING
+           6. MEMBERSHIP PLANS & PRICING
            ========================================================================== */
         .membership-toggle {
             display: flex;
@@ -966,7 +924,7 @@
         }
 
         /* ==========================================================================
-           8. TRAINERS SECTION
+           7. TRAINERS SECTION
            ========================================================================== */
         .trainers-grid {
             display: grid;
@@ -1070,7 +1028,7 @@
         }
 
         /* ==========================================================================
-           9. BMI CALCULATOR SECTION
+           8. BMI CALCULATOR SECTION
            ========================================================================== */
         .bmi-container {
             background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
@@ -1186,7 +1144,7 @@
         }
 
         /* ==========================================================================
-           10. STATS & COUNTER BAR
+           9. STATS & COUNTER BAR
            ========================================================================== */
         .stats-section {
             background: linear-gradient(90deg, rgba(229, 9, 20, 0.95) 0%, rgba(180, 0, 10, 0.95) 100%),
@@ -1218,7 +1176,7 @@
         }
 
         /* ==========================================================================
-           11. GALLERY & LIGHTBOX
+           10. GALLERY & LIGHTBOX
            ========================================================================== */
         .gallery-filter {
             display: flex;
@@ -1370,7 +1328,7 @@
         }
 
         /* ==========================================================================
-           12. TESTIMONIALS SECTION
+           11. TESTIMONIALS SECTION
            ========================================================================== */
         .testimonials-grid {
             display: grid;
@@ -1430,7 +1388,7 @@
         }
 
         /* ==========================================================================
-           13. CONTACT SECTION
+           12. CONTACT SECTION
            ========================================================================== */
         .contact-grid {
             display: grid;
@@ -1584,7 +1542,7 @@
         }
 
         /* ==========================================================================
-           14. FOOTER
+           13. FOOTER
            ========================================================================== */
         .footer {
             background-color: var(--bg-secondary);
@@ -1723,15 +1681,33 @@
         }
 
         /* ==========================================================================
-           15. ANIMATIONS & MEDIA QUERIES
+           14. ANIMATIONS & MEDIA QUERIES
            ========================================================================== */
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
+        /* Hero Load Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .reveal.active {
+        .hero-fade-in {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Scroll Reveal (Only applied if JS is enabled) */
+        .js-enabled .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .js-enabled .reveal.active {
             opacity: 1;
             transform: translateY(0);
         }
@@ -1757,37 +1733,17 @@
             .footer-grid { grid-template-columns: 1fr; }
             .about-img-main { height: 380px; }
             .about-experience-badge { right: 10px; bottom: -20px; padding: 20px; }
-            .contact-info-item { flex-wrap: wrap; }
-            .quick-actions { flex-direction: column; }
-            .quick-actions .action-btn { width: 100%; justify-content: center; }
-            .bmi-container { padding: 30px 20px; }
-            .nav-btn { display: none; }
-        }
-
-        @media (max-width: 480px) {
-            .container { width: 92%; }
-            .hero-title { font-size: 2.8rem; }
-            .btn { padding: 14px 24px; font-size: 0.9rem; }
-            .plan-price .amount { font-size: 3rem; }
-            .about-experience-badge { position: static; margin-top: 20px; display: inline-block; }
-            .footer-bottom { flex-direction: column; text-align: center; }
         }
     </style>
 </head>
 <body>
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader-ring"></div>
-        <div class="loader-text">PULSE<span>FIT</span></div>
-    </div>
 
     <!-- Navigation Header -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#home" class="logo">
                 <i class="fa-solid fa-dumbbell"></i>
-                PULSE<span>FIT</span>
+                AYAN<span>FITNESS</span>
             </a>
 
             <nav class="nav-menu">
@@ -1822,7 +1778,7 @@
             <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
             <a href="#contact" class="mobile-nav-link">Contact Us</a>
         </div>
-        <a href="#membership" class="btn btn-primary btn-block mobile-btn">Join Pulse Fit</a>
+        <a href="#membership" class="btn btn-primary btn-block mobile-btn">Join Ayan Fitness</a>
     </div>
 
     <!-- MAIN CONTENT SECTIONS -->
@@ -1831,22 +1787,22 @@
         <!-- 1. HERO SECTION -->
         <section class="hero" id="home">
             <div class="container">
-                <div class="hero-content reveal">
+                <div class="hero-content hero-fade-in">
                     <div class="hero-tag">
-                        <i class="fa-solid fa-fire"></i> Tamil Nadu's Premium Fitness Experience
+                        <i class="fa-solid fa-fire"></i> AYAN FITNESS - Weight loss service
                     </div>
                     <h1 class="hero-title">
-                        FORGE YOUR LEGEND. <span>UNLEASH POWER.</span>
+                        FORGE YOUR LEGEND. <span>BUILD THE BODY.</span>
                     </h1>
                     <p class="hero-description">
-                        State-of-the-art equipment, world-renowned personal coaches, and a high-intensity environment engineered for ultimate physical transformation— Coimbatore, Tamil Nadu.
+                        Tiruppur's premium fitness sanctuary. State-of-the-art strength zones, tailored conditioning programs, and elite coaching engineered for physical transformations.
                     </p>
                     <div class="hero-buttons">
                         <a href="#membership" class="btn btn-primary">
                             Join The Club <i class="fa-solid fa-arrow-right"></i>
                         </a>
                         <a href="#about" class="btn btn-secondary">
-                            Explore Facilities
+                            Explore Programs
                         </a>
                     </div>
                 </div>
@@ -1895,23 +1851,23 @@
                     </div>
 
                     <div class="about-content reveal">
-                        <span class="section-subtitle">THE PULSE FIT STORY</span>
-                        <h3>WE ARE NOT JUST A GYM. WE ARE A SANCTUARY OF STRENGTH.</h3>
+                        <span class="section-subtitle">THE AYAN FITNESS STORY</span>
+                        <h3>WE ARE NOT JUST A GYM. WE ARE A SANCTUARY OF TRANSFORMATION.</h3>
                         <p>
-                            Founded in 2014 in the heart of Coimbatore, Tamil Nadu, PULSE FIT was established with a singular mission: to eliminate mediocre fitness standards and build an elite environment where ambition meets cutting-edge methodology.
+                            AYAN FITNESS is Tiruppur's premier training and strength facility. We specialize in athletic physical conditioning, safe body recomposition, and personalized fitness protocols.
                         </p>
                         <p>
-                            Spanning over 25,000 sq. ft. of space, our facility features competition-grade iron, specialized athletic turfs, and bio-metric recovery suites tailored for beginners to professional athletes.
+                            With over 25,000 sq. ft. of training space in Tamil Nadu, our facility features competition-grade iron, customized functional CrossFit training zones, and premium wellness facilities.
                         </p>
 
                         <div class="values-grid">
                             <div class="value-card">
                                 <h5>Our Mission</h5>
-                                <p>To empower individuals to transcend physical limits through expert guidance and world-class equipment.</p>
+                                <p>To empower Tiruppur's community to exceed their physical boundaries through scientific training methodologies.</p>
                             </div>
                             <div class="value-card">
                                 <h5>Our Vision</h5>
-                                <p>To remain the premier fitness sanctuary known for innovation, community, and transformative results.</p>
+                                <p>To lead Tamil Nadu in results-driven coaching, holistic wellness recovery, and athletic training.</p>
                             </div>
                         </div>
                     </div>
@@ -1921,24 +1877,24 @@
                 <div style="margin-top: 100px;">
                     <div class="section-title-wrapper">
                         <span class="section-subtitle">WHY CHOOSE US</span>
-                        <h2 class="section-title">THE PULSE FIT ADVANTAGE</h2>
+                        <h2 class="section-title">THE AYAN FITNESS ADVANTAGE</h2>
                     </div>
 
                     <div class="why-grid">
                         <div class="why-card reveal">
                             <i class="fa-solid fa-user-ninja why-icon"></i>
-                            <h4>Certified Elite Trainers</h4>
-                            <p>Our coaches hold top international accreditations and specialize in hyper-personalized strength and body recomposition.</p>
+                            <h4>Certified Coaches</h4>
+                            <p>Our trainers hold international accreditations to provide accurate biomechanical guidance and lifestyle support.</p>
                         </div>
                         <div class="why-card reveal">
                             <i class="fa-solid fa-dumbbell why-icon"></i>
                             <h4>Biomechanical Equipment</h4>
-                            <p>Train with custom Hammer Strength, Eleiko, and Technogym machinery engineered for maximal muscle activation.</p>
+                            <p>Equipped with premium Hammer Strength plate-loaded machinery and Eleiko power racks for targeted resistance training.</p>
                         </div>
                         <div class="why-card reveal">
                             <i class="fa-solid fa-apple-whole why-icon"></i>
-                            <h4>Nutrition & Macro Support</h4>
-                            <p>Get custom dietary protocols and meal plans designed by registered sports dietitians to accelerate recovery.</p>
+                            <h4>Custom Nutrition & Macros</h4>
+                            <p>Receive comprehensive calorie-controlled dietary plans tailored to your food habits and target goals.</p>
                         </div>
                     </div>
                 </div>
@@ -1954,22 +1910,22 @@
                         <div class="facility-card reveal">
                             <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" alt="Heavy Strength Zone">
                             <div class="facility-overlay">
-                                <h4>Heavy Strength Arena</h4>
-                                <p>Free Weights & Power Racks</p>
+                                <h4>Strength & Conditioning Arena</h4>
+                                <p>Olympic Plates & Free Weights</p>
                             </div>
                         </div>
                         <div class="facility-card reveal">
                             <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Cardio & Endurance">
                             <div class="facility-overlay">
                                 <h4>Cardio & HIIT Lab</h4>
-                                <p>Interactive Sprint Simulators</p>
+                                <p>Sprint Mills & Pacing Tools</p>
                             </div>
                         </div>
                         <div class="facility-card reveal">
                             <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="Yoga & Recovery">
                             <div class="facility-overlay">
                                 <h4>Mind & Recovery Studio</h4>
-                                <p>Yoga, Mobility & Sauna</p>
+                                <p>Active Stretch & Infrared Sauna</p>
                             </div>
                         </div>
                     </div>
@@ -2007,7 +1963,7 @@
                 <div class="section-title-wrapper">
                     <span class="section-subtitle">MEMBERSHIP PACKAGES</span>
                     <h2 class="section-title">INVEST IN YOUR PERFORMANCE</h2>
-                    <p class="section-description">Choose a plan designed to match your goals. No hidden fees. Cancel or upgrade anytime.</p>
+                    <p class="section-description">Choose a membership plan crafted to suit your schedule. Simple, transparent pricing with no hidden lock-in contracts.</p>
                 </div>
 
                 <div class="membership-toggle">
@@ -2024,16 +1980,16 @@
                         <div class="plan-header">
                             <h3 class="plan-name">BASIC CLUB</h3>
                             <div class="plan-price">
-                                <span class="currency">$</span>
-                                <span class="amount" id="priceBasic">29</span>
+                                <span class="currency">₹</span>
+                                <span class="amount" id="priceBasic">1999</span>
                                 <span class="period">/ month</span>
                             </div>
                         </div>
                         <ul class="plan-features">
                             <li><i class="fa-solid fa-check"></i> Standard Gym Floor Access</li>
-                            <li><i class="fa-solid fa-check"></i> Locker Room & Showers</li>
+                            <li><i class="fa-solid fa-check"></i> Locker Room & Locker Access</li>
                             <li><i class="fa-solid fa-check"></i> Free High-Speed WiFi</li>
-                            <li><i class="fa-solid fa-check"></i> 1 Fitness Orientation Session</li>
+                            <li><i class="fa-solid fa-check"></i> 1 Fitness Assessment Session</li>
                             <li class="disabled"><i class="fa-solid fa-xmark"></i> Group Fitness Classes</li>
                             <li class="disabled"><i class="fa-solid fa-xmark"></i> Recovery & Sauna Access</li>
                         </ul>
@@ -2046,17 +2002,17 @@
                         <div class="plan-header">
                             <h3 class="plan-name">PRO PERFORMANCE</h3>
                             <div class="plan-price">
-                                <span class="currency">$</span>
-                                <span class="amount" id="priceStandard">59</span>
+                                <span class="currency">₹</span>
+                                <span class="amount" id="priceStandard">3499</span>
                                 <span class="period">/ month</span>
                             </div>
                         </div>
                         <ul class="plan-features">
                             <li><i class="fa-solid fa-check"></i> 24/7 Full Gym Floor Access</li>
-                            <li><i class="fa-solid fa-check"></i> Unlimited Group Fitness Classes</li>
+                            <li><i class="fa-solid fa-check"></i> Unlimited Group Strength & HIIT Classes</li>
                             <li><i class="fa-solid fa-check"></i> 2 Monthly Personal Training Sessions</li>
-                            <li><i class="fa-solid fa-check"></i> Infrared Sauna & Cold Plunge</li>
-                            <li><i class="fa-solid fa-check"></i> Custom Nutrition Blueprint</li>
+                            <li><i class="fa-solid fa-check"></i> Infrared Sauna & Recovery Pool Access</li>
+                            <li><i class="fa-solid fa-check"></i> Personalized Nutrition Blueprint</li>
                             <li class="disabled"><i class="fa-solid fa-xmark"></i> VIP Guest Passes</li>
                         </ul>
                         <a href="#contact" class="btn btn-primary btn-block">Select Pro</a>
@@ -2067,18 +2023,18 @@
                         <div class="plan-header">
                             <h3 class="plan-name">VIP ELITE</h3>
                             <div class="plan-price">
-                                <span class="currency">$</span>
-                                <span class="amount" id="pricePremium">99</span>
+                                <span class="currency">₹</span>
+                                <span class="amount" id="pricePremium">5999</span>
                                 <span class="period">/ month</span>
                             </div>
                         </div>
                         <ul class="plan-features">
                             <li><i class="fa-solid fa-check"></i> All Pro Plan Benefits</li>
-                            <li><i class="fa-solid fa-check"></i> Unlimited 1-on-1 Personal Training</li>
-                            <li><i class="fa-solid fa-check"></i> Private VIP Locker & Towel Service</li>
+                            <li><i class="fa-solid fa-check"></i> Unlimited 1-on-1 Personal Coaching</li>
+                            <li><i class="fa-solid fa-check"></i> Dedicated VIP Locker & Towel Service</li>
                             <li><i class="fa-solid fa-check"></i> Unlimited Guest Passes (2 per visit)</li>
-                            <li><i class="fa-solid fa-check"></i> Quarterly Body Composition Scans</li>
-                            <li><i class="fa-solid fa-check"></i> Complimentary Smoothie Bar Drink</li>
+                            <li><i class="fa-solid fa-check"></i> Monthly Body Composition Scans</li>
+                            <li><i class="fa-solid fa-check"></i> Complimentary Nutrition Shake / visit</li>
                         </ul>
                         <a href="#contact" class="btn btn-secondary btn-block">Select VIP</a>
                     </div>
@@ -2097,25 +2053,25 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>24/7 Gym Floor Access</td>
-                                <td><i class="fa-solid fa-check"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
+                                <td>Gym Floor Access</td>
+                                <td>Standard Hours</td>
+                                <td>24/7 Access</td>
+                                <td>24/7 Access</td>
                             </tr>
                             <tr>
-                                <td>Group HIIT & Yoga Classes</td>
+                                <td>Group Classes (HIIT & Yoga)</td>
                                 <td><i class="fa-solid fa-xmark"></i></td>
                                 <td><i class="fa-solid fa-check"></i></td>
                                 <td><i class="fa-solid fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Sauna & Hydrotherapy</td>
+                                <td>Sauna & Recovery Spa</td>
                                 <td><i class="fa-solid fa-xmark"></i></td>
                                 <td><i class="fa-solid fa-check"></i></td>
                                 <td><i class="fa-solid fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Personal Coach Sessions</td>
+                                <td>Personal Trainer Sessions</td>
                                 <td>None</td>
                                 <td>2 / month</td>
                                 <td>Unlimited</td>
@@ -2139,31 +2095,31 @@
 
                     <div class="faq-item">
                         <div class="faq-header">
-                            <span>Are there any hidden sign-up or initiation fees?</span>
+                            <span>Are there any hidden sign-up or enrollment fees?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="faq-body">
-                            <p>No! At PULSE FIT, we believe in complete transparency. What you see is what you pay. There are zero hidden contract initiation fees.</p>
+                            <p>No, we operate with a transparent pricing model. There are no surprise enrollment fees or sign-up charges added to your membership.</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <div class="faq-header">
-                            <span>Can I pause or cancel my membership at any time?</span>
+                            <span>Can I temporarily freeze my membership?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="faq-body">
-                            <p>Yes! You can pause your membership for up to 3 months for travel or medical reasons with 7 days written notice. Cancellations require no long-term lock-ins on monthly plans.</p>
+                            <p>Yes, members can pause their membership for up to 3 months per year in case of travel, medical conditions, or other personal commitments. Freeze requests require 7 days written notice.</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <div class="faq-header">
-                            <span>Are personal training sessions included in membership?</span>
+                            <span>Do you offer personal training for beginners?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="faq-body">
-                            <p>Our Pro Performance plan includes 2 sessions monthly, while our VIP Elite plan provides unlimited 1-on-1 coaching. Basic members can also purchase session bundles at discounted rates.</p>
+                            <p>Absolutely! All new members receive a complimentary onboarding and assessment session where a personal coach guides you through layout orientation, proper equipment forms, and custom advice.</p>
                         </div>
                     </div>
                 </div>
@@ -2179,7 +2135,7 @@
                             <span class="section-subtitle">HEALTH METRICS</span>
                             <h2 class="section-title" style="font-size: 2.8rem;">CALCULATE YOUR BMI</h2>
                             <p style="color: var(--text-secondary); margin-bottom: 25px;">
-                                Body Mass Index (BMI) is a useful measure of body fat based on height and weight. Use our interactive calculator to check your fitness baseline.
+                                Body Mass Index (BMI) evaluates your body fat composition based on height and weight. Use our interactive tool to identify your physical baseline.
                             </p>
 
                             <div class="unit-selector">
@@ -2210,7 +2166,7 @@
                             </div>
 
                             <p id="bmiAdvice" style="color: var(--text-muted); font-size: 0.9rem;">
-                                Select your height and weight parameters to get real-time health analysis and training recommendations.
+                                Input your height and weight attributes to get real-time health analysis and custom recommendations.
                             </p>
                         </div>
                     </div>
@@ -2224,7 +2180,7 @@
                 <div class="section-title-wrapper">
                     <span class="section-subtitle">EXPERT COACHES</span>
                     <h2 class="section-title">MEET THE ELITE TEAM</h2>
-                    <p class="section-description">Our certified strength, conditioning, and bio-mechanics experts are dedicated to helping you achieve extraordinary results.</p>
+                    <p class="section-description">Our certified trainers, metabolic coaches, and mobility specialists are here to guide your fitness path.</p>
                 </div>
 
                 <div class="trainers-grid">
@@ -2241,7 +2197,7 @@
                         <div class="trainer-info">
                             <h4 class="trainer-name">MARCUS VANCE</h4>
                             <div class="trainer-role">Head Strength Coach</div>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Former Olympic powerlifter specializing in max-effort strength and athletic hypertrophy.</p>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Olympic powerlifter specializing in compound progressive overload and athletic performance.</p>
                             <div class="trainer-meta">
                                 <span><i class="fa-solid fa-clock"></i> 10+ Yrs Exp</span>
                                 <span><i class="fa-solid fa-certificate"></i> CSCS Certified</span>
@@ -2260,8 +2216,8 @@
                         </div>
                         <div class="trainer-info">
                             <h4 class="trainer-name">ELENA ROSTOVA</h4>
-                            <div class="trainer-role">CrossFit & HIIT Specialist</div>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">High-intensity conditioning coach focused on metabolic acceleration and endurance.</p>
+                            <div class="trainer-role">Conditioning Specialist</div>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Conditioning specialist focused on active fat loss, endurance conditioning, and functional weight reduction.</p>
                             <div class="trainer-meta">
                                 <span><i class="fa-solid fa-clock"></i> 8+ Yrs Exp</span>
                                 <span><i class="fa-solid fa-certificate"></i> CrossFit L3</span>
@@ -2281,7 +2237,7 @@
                         <div class="trainer-info">
                             <h4 class="trainer-name">DAVID MILLER</h4>
                             <div class="trainer-role">Bodybuilding & Recomp</div>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">IFBB Pro athlete expert in physique sculpting, meal timing, and competition prep.</p>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Physique preparation coach expert in bodybuilding layouts and customized nutrition plans.</p>
                             <div class="trainer-meta">
                                 <span><i class="fa-solid fa-clock"></i> 12+ Yrs Exp</span>
                                 <span><i class="fa-solid fa-certificate"></i> IFBB Pro</span>
@@ -2301,7 +2257,7 @@
                         <div class="trainer-info">
                             <h4 class="trainer-name">SOPHIA CHEN</h4>
                             <div class="trainer-role">Mobility & Yoga Director</div>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Functional movement specialist enhancing joint longevity, posture, and active recovery.</p>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Yoga and physical flexibility instructor focused on joint longevity and recovery routines.</p>
                             <div class="trainer-meta">
                                 <span><i class="fa-solid fa-clock"></i> 7+ Yrs Exp</span>
                                 <span><i class="fa-solid fa-certificate"></i> RYT-500 Master</span>
@@ -2347,28 +2303,28 @@
                         <img src="https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80" alt="Cardio Studio">
                         <div class="gallery-overlay">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
-                            <h5>Treadmill & Sprint Bay</h5>
+                            <h5>Treadmill & HIIT Area</h5>
                         </div>
                     </div>
                     <div class="gallery-item reveal" data-category="yoga">
                         <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80" alt="Yoga Class">
                         <div class="gallery-overlay">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
-                            <h5>Sunset Yoga Studio</h5>
+                            <h5>Yoga & Core Studio</h5>
                         </div>
                     </div>
                     <div class="gallery-item reveal" data-category="interior">
-                        <img src="https://images.unsplash.com/photo-1570829460005-c840387bb1ca?auto=format&fit=crop&w=800&q=80" alt="Recovery Sauna">
+                        <img src="https://images.unsplash.com/photo-1570829460005-c840387bb1ca?auto=format&fit=crop&w=800&q=80" alt="Sauna Recovery">
                         <div class="gallery-overlay">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                             <h5>Infrared Recovery Sauna</h5>
                         </div>
                     </div>
                     <div class="gallery-item reveal" data-category="workout">
-                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Crossfit Turf">
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Crossfit Zone">
                         <div class="gallery-overlay">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
-                            <h5>CrossFit Sprint Turf</h5>
+                            <h5>HIIT & Functional Turf</h5>
                         </div>
                     </div>
                 </div>
@@ -2383,13 +2339,13 @@
             <img src="" alt="Expanded View" class="lightbox-content" id="lightboxImage">
         </div>
 
-        <!-- 8. TESTIMONIALS PAGE SECTION -->
+        <!-- 8. TESTIMONIALS SECTION -->
         <section class="section-padding" id="testimonials">
             <div class="container">
                 <div class="section-title-wrapper">
                     <span class="section-subtitle">SUCCESS STORIES</span>
                     <h2 class="section-title">REAL TRANSFORMATIONS</h2>
-                    <p class="section-description">Hear directly from our members who pushed past limits and remade their lives at PULSE FIT.</p>
+                    <p class="section-description">Read genuine experiences from active members who transformed their health and achieved target goals at AYAN FITNESS.</p>
                 </div>
 
                 <div class="testimonials-grid">
@@ -2402,13 +2358,13 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <p class="testimonial-text">
-                            "Joining PULSE FIT completely reshaped my life. I dropped 22 lbs in 4 months under Marcus's guidance. The atmosphere here drives you to work harder every single day."
+                            "AYAN FITNESS changed my outlook on training. The trainers planned a customized nutrition program, and the community environment keeps me fully accountable."
                         </p>
                         <div class="client-profile">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Client Jason M." class="client-img">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Client Harish K." class="client-img">
                             <div class="client-info">
-                                <h5>JASON MORTON</h5>
-                                <span>Member for 2 Years</span>
+                                <h5>Harish Kumar</h5>
+                                <span>Tiruppur Resident</span>
                             </div>
                         </div>
                     </div>
@@ -2422,13 +2378,13 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <p class="testimonial-text">
-                            "The equipment quality is unmatched anywhere in the city. The recovery sauna and hydrotherapy plunges after heavy leg days are absolute game changers!"
+                            "Excellent workout environment and premium machines. The customized training formats and support on dietary charts helped me drop body fat percentage safely."
                         </p>
                         <div class="client-profile">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Client Sarah L." class="client-img">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Client Priya S." class="client-img">
                             <div class="client-info">
-                                <h5>SARAH LINDSEY</h5>
-                                <span>Member for 1 Year</span>
+                                <h5>Priya Sharma</h5>
+                                <span>Member since 2024</span>
                             </div>
                         </div>
                     </div>
@@ -2442,13 +2398,13 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <p class="testimonial-text">
-                            "As a competitive athlete, finding a facility with power racks, proper chalk allowance, and elite coaches was essential. PULSE FIT exceeded all expectations."
+                            "The coaching staff is knowledgeable and holds verified fitness certifications. Best place in Tiruppur for athletic training and structured programming."
                         </p>
                         <div class="client-profile">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Client Brandon K." class="client-img">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Client Arjun D." class="client-img">
                             <div class="client-info">
-                                <h5>BRANDON KENNEDY</h5>
-                                <span>Powerlifter</span>
+                                <h5>Arjun Dev</h5>
+                                <span>Athletic Member</span>
                             </div>
                         </div>
                     </div>
@@ -2462,7 +2418,7 @@
                 <div class="section-title-wrapper">
                     <span class="section-subtitle">GET IN TOUCH</span>
                     <h2 class="section-title">START YOUR JOURNEY TODAY</h2>
-                    <p class="section-description">Have questions or ready to claim your free 1-day pass? Contact our team or drop by in person.</p>
+                    <p class="section-description">Contact our Tiruppur front desk or visit us directly to claim your free 1-day membership pass.</p>
                 </div>
 
                 <div class="contact-grid">
@@ -2471,21 +2427,21 @@
                             <div class="contact-info-item">
                                 <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
                                 <div class="contact-info-text">
-                                    <h5>Sanctuary Location</h5>
-                                    <p>45, Avinashi Road, RS Puram<br>Coimbatore, Tamil Nadu 641002</p>
+                                    <h5>Tiruppur Location</h5>
+                                    <p>15, Palladam Road, Near Thennampalayam,<br>Tiruppur, Tamil Nadu 641604</p>
                                 </div>
                             </div>
                             <div class="contact-info-item">
                                 <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
                                 <div class="contact-info-text">
-                                    <h5>Email Enquiries</h5>
-                                    <p>gnanakannank80@gmail.com</p>
+                                    <h5>Email Address</h5>
+                                    <p>gnanakannank80@gmail.com | info@ayanfitness.com</p>
                                 </div>
                             </div>
                             <div class="contact-info-item">
                                 <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
                                 <div class="contact-info-text">
-                                    <h5>Direct Phone</h5>
+                                    <h5>Front Desk Line</h5>
                                     <p>+91 63852 22106</p>
                                 </div>
                             </div>
@@ -2506,7 +2462,7 @@
                             <div class="form-row">
                                 <div class="input-group">
                                     <input type="text" id="contactName" class="form-control" placeholder="Full Name *" required>
-                                    <span class="form-error">Please enter your full name</span>
+                                    <span class="form-error">Please enter your name</span>
                                 </div>
                                 <div class="input-group">
                                     <input type="email" id="contactEmail" class="form-control" placeholder="Email Address *" required>
@@ -2516,16 +2472,16 @@
 
                             <div class="form-row">
                                 <div class="input-group">
-                                    <input type="tel" id="contactPhone" class="form-control" placeholder="Phone Number *" required pattern="[0-9+\s-]{7,}">
+                                    <input type="tel" id="contactPhone" class="form-control" placeholder="Phone Number *" required pattern="[0-9+\s-]{10,}">
                                     <span class="form-error">Please enter a valid phone number</span>
                                 </div>
                                 <div class="input-group">
                                     <select id="contactPlan" class="form-control" style="background-color: var(--bg-primary);">
-                                        <option value="" disabled selected>Interested Membership Plan</option>
-                                        <option value="basic">Basic Club Plan ($29/mo)</option>
-                                        <option value="pro">Pro Performance ($59/mo)</option>
-                                        <option value="vip">VIP Elite ($99/mo)</option>
-                                        <option value="daypass">Free 1-Day Trial Pass</option>
+                                        <option value="" disabled selected>Select Membership Plan</option>
+                                        <option value="basic">Basic Plan (₹1999/mo)</option>
+                                        <option value="pro">Pro Performance (₹3499/mo)</option>
+                                        <option value="vip">VIP Elite (₹5999/mo)</option>
+                                        <option value="daypass">Free 1-Day Pass</option>
                                     </select>
                                 </div>
                             </div>
@@ -2542,9 +2498,9 @@
                     </div>
                 </div>
 
-                <!-- Google Maps Mockup -->
+                <!-- Google Maps Embed for Tiruppur -->
                 <div class="map-wrapper reveal">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125297.65!2d76.9200!3d11.0100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971d15%3A0x2d5f81c2c5e4a8f0!2sRS%20Puram%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1655000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.9392500000003!2d77.341072!3d11.108524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba900bf00000001%3A0x6bde35b1c55490bc!2sTiruppur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1655000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </section>
@@ -2558,16 +2514,15 @@
                 <div class="footer-brand">
                     <a href="#home" class="logo">
                         <i class="fa-solid fa-dumbbell"></i>
-                        PULSE<span>FIT</span>
+                        AYAN<span>FITNESS</span>
                     </a>
                     <p>
-                        The ultimate sanctuary for physical transformation, performance conditioning, and bio-mechanical strength training.
+                        Tiruppur's premium training destination specializing in performance building workouts, active recovery, and professional athletic coaching.
                     </p>
                     <div class="footer-socials">
                         <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                 </div>
 
@@ -2586,9 +2541,9 @@
                 <div class="footer-column">
                     <h5>OPENING HOURS</h5>
                     <ul class="hours-list">
-                        <li><span>Mon - Fri:</span> <span>5:00 AM - 11:00 PM</span></li>
-                        <li><span>Saturday:</span> <span>6:00 AM - 10:00 PM</span></li>
-                        <li><span>Sunday:</span> <span>6:00 AM - 8:00 PM</span></li>
+                        <li><span>Mon - Fri:</span> <span>5:00 AM - 10:00 PM</span></li>
+                        <li><span>Saturday:</span> <span>6:00 AM - 9:00 PM</span></li>
+                        <li><span>Sunday:</span> <span>6:00 AM - 6:00 PM</span></li>
                         <li><span>VIP Access:</span> <span>24 Hours / 7 Days</span></li>
                     </ul>
                 </div>
@@ -2596,7 +2551,7 @@
                 <div class="footer-column">
                     <h5>NEWSLETTER</h5>
                     <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">
-                        Subscribe for weekly workout tips, nutrition guides, and exclusive event passes.
+                        Subscribe to get fitness advice, nutrition tips, and special membership promotions.
                     </p>
                     <form id="newsletterForm" style="display: flex; gap: 8px;">
                         <input type="email" placeholder="Your Email" class="form-control" style="padding: 10px 14px;" required>
@@ -2606,7 +2561,7 @@
             </div>
 
             <div class="footer-bottom">
-                <div>&copy; 2026 PULSE FIT Center, Coimbatore, Tamil Nadu. All Rights Reserved. Built with Precision.</div>
+                <div>&copy; 2026 AYAN FITNESS Tiruppur. All Rights Reserved. Built with Precision.</div>
                 <div style="display: flex; gap: 20px;">
                     <a href="#home" style="color: var(--text-muted);">Privacy Policy</a>
                     <a href="#home" style="color: var(--text-muted);">Terms & Conditions</a>
@@ -2622,20 +2577,14 @@
 
     <!-- ==========================================================================
        JAVASCRIPT FUNCTIONALITY
-       ========================================================================== -->
+       ========================================================================== */
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
-            /* 1. Preloader */
-            const preloader = document.getElementById('preloader');
-            window.addEventListener('load', () => {
-                setTimeout(() => {
-                    preloader.style.opacity = '0';
-                    preloader.style.visibility = 'hidden';
-                }, 400);
-            });
+            // Enable JS styling variables (activates reveal animations gracefully)
+            document.documentElement.classList.add('js-enabled');
 
-            /* 2. Sticky Navbar & Active Navigation Highlight */
+            /* 1. Sticky Navbar & Active Navigation Highlight */
             const navbar = document.getElementById('navbar');
             const navLinks = document.querySelectorAll('.nav-link');
             const sections = document.querySelectorAll('section, header');
@@ -2673,7 +2622,7 @@
                 }
             });
 
-            /* 3. Mobile Navigation Menu Toggle */
+            /* 2. Mobile Navigation Menu Toggle */
             const hamburger = document.getElementById('hamburger');
             const mobileOverlay = document.getElementById('mobileOverlay');
             const mobileDrawer = document.getElementById('mobileDrawer');
@@ -2694,24 +2643,28 @@
                 });
             });
 
-            /* 4. Back To Top Action */
+            /* 3. Back To Top Action */
             document.getElementById('backToTop').addEventListener('click', () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
 
-            /* 5. Scroll Reveal Animation */
+            /* 4. Scroll Reveal Animation */
             const revealElements = document.querySelectorAll('.reveal');
             const revealObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('active');
+                        revealObserver.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.15 });
+            }, { 
+                threshold: 0.05,
+                rootMargin: '0px 0px -50px 0px'
+            });
 
             revealElements.forEach(el => revealObserver.observe(el));
 
-            /* 6. Stats Counter Animation */
+            /* 5. Stats Counter Animation */
             const statNumbers = document.querySelectorAll('.stat-item .number');
             let counted = false;
 
@@ -2744,7 +2697,7 @@
             const statsSection = document.querySelector('.stats-section');
             if (statsSection) statsObserver.observe(statsSection);
 
-            /* 7. Membership Pricing Toggle (Monthly / Annual) */
+            /* 6. Membership Pricing Toggle (Monthly / Annual) */
             const billingToggle = document.getElementById('billingToggle');
             const monthlyLabel = document.getElementById('monthlyLabel');
             const annualLabel = document.getElementById('annualLabel');
@@ -2761,18 +2714,18 @@
                     annualLabel.classList.toggle('active', isAnnual);
 
                     if (isAnnual) {
-                        priceBasic.innerText = '23';
-                        priceStandard.innerText = '47';
-                        pricePremium.innerText = '79';
+                        priceBasic.innerText = '1599';
+                        priceStandard.innerText = '2799';
+                        pricePremium.innerText = '4799';
                     } else {
-                        priceBasic.innerText = '29';
-                        priceStandard.innerText = '59';
-                        pricePremium.innerText = '99';
+                        priceBasic.innerText = '1999';
+                        priceStandard.innerText = '3499';
+                        pricePremium.innerText = '5999';
                     }
                 });
             }
 
-            /* 8. FAQ Accordion Toggle */
+            /* 7. FAQ Accordion Toggle */
             const faqItems = document.querySelectorAll('.faq-item');
             faqItems.forEach(item => {
                 const header = item.querySelector('.faq-header');
@@ -2783,7 +2736,7 @@
                 });
             });
 
-            /* 9. Interactive BMI Calculator */
+            /* 8. Interactive BMI Calculator */
             const bmiForm = document.getElementById('bmiForm');
             const unitMetric = document.getElementById('unitMetric');
             const unitImperial = document.getElementById('unitImperial');
@@ -2842,26 +2795,26 @@
                 if (bmi < 18.5) {
                     statusText = 'Underweight';
                     fillPercent = 25;
-                    bmiAdvice.innerText = 'Recommended: Focus on hyper-caloric nutrition and heavy compound strength building.';
+                    bmiAdvice.innerText = 'Focus on high-quality calorie intake and structured resistance training.';
                 } else if (bmi >= 18.5 && bmi <= 24.9) {
                     statusText = 'Optimal Healthy Weight';
                     fillPercent = 50;
-                    bmiAdvice.innerText = 'Great shape! Maintain your physical momentum with balanced progressive overload.';
+                    bmiAdvice.innerText = 'Excellent physical shape! Keep up with standard metabolic conditioning and resistance loading.';
                 } else if (bmi >= 25 && bmi <= 29.9) {
                     statusText = 'Overweight';
                     fillPercent = 75;
-                    bmiAdvice.innerText = 'Recommended: High intensity conditioning combined with calorie deficit support.';
+                    bmiAdvice.innerText = 'Prioritize consistent cardiovascular pacing along with controlled calorie intake management.';
                 } else {
                     statusText = 'Obese Range';
                     fillPercent = 100;
-                    bmiAdvice.innerText = 'Recommended: Personalized low-impact aerobic routines and structured dietary coaching.';
+                    bmiAdvice.innerText = 'Recommend structured cardiovascular mobility workouts alongside custom nutritionist guidance.';
                 }
 
                 bmiStatus.innerText = statusText;
                 meterFill.style.width = fillPercent + '%';
             });
 
-            /* 10. Gallery Category Filter & Lightbox */
+            /* 9. Gallery Category Filter & Lightbox */
             const filterBtns = document.querySelectorAll('.filter-btn');
             const galleryItems = document.querySelectorAll('.gallery-item');
             const lightboxModal = document.getElementById('lightboxModal');
@@ -2926,7 +2879,7 @@
                 if (e.key === 'ArrowRight') lightboxNext.click();
             });
 
-            /* 11. Form Validation for Contact Form */
+            /* 10. Form Validation for Contact Form */
             const contactForm = document.getElementById('contactForm');
             if (contactForm) {
                 contactForm.addEventListener('submit', (e) => {
@@ -2947,25 +2900,25 @@
                         }
                     });
 
-                    // Email Regex Check
+                    // Email validation check
                     if (emailInput.value && !/\S+@\S+\.\S+/.test(emailInput.value)) {
                         emailInput.classList.add('invalid');
                         isValid = false;
                     }
 
                     if (isValid) {
-                        alert('Thank you! Your message has been received. Our team will contact you within 24 hours.');
+                        alert('Thank you! Your details have been submitted. Our team will contact you shortly.');
                         contactForm.reset();
                     }
                 });
             }
 
-            /* 12. Newsletter Form */
+            /* 11. Newsletter Form */
             const newsletterForm = document.getElementById('newsletterForm');
             if (newsletterForm) {
                 newsletterForm.addEventListener('submit', (e) => {
                     e.preventDefault();
-                    alert('Successfully subscribed to the PULSE FIT Newsletter!');
+                    alert('Successfully subscribed to the AYAN FITNESS Newsletter!');
                     newsletterForm.reset();
                 });
             }
